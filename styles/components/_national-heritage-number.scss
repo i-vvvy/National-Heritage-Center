@@ -1,0 +1,183 @@
+.national-heritage-number {
+  .tit-box {
+    width: 80%;
+    text-align: center;
+    margin: 50px 10%;
+
+    .tit {
+      font-family: $font-main-serif;
+      margin-bottom: 20px;
+    }
+
+    .txt {
+      font-family: $font-main-serif;
+      margin-bottom: 20px;
+      @include text-style(16, $black);
+    }
+  }
+
+  .content-box {
+    color: $white;
+    background-color: $brown;
+    padding: 30px 0px;
+    text-align: center;
+
+    .content-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .content-item {
+      padding: 0 4px;
+
+      .tit {
+        @include text-style(16);
+        margin-bottom: 18px;
+        font-weight: 400;
+      }
+
+      .num {
+        font-size: 38px;
+        font-weight: 500;
+      }
+
+      .txt {
+        @include text-style(16);
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@include responsive(T) {
+  .national-heritage-number {
+    .tit-box {
+      width: 80%;
+      text-align: center;
+      margin: 70px 10%;
+
+      .tit {
+        font-family: $font-main-serif;
+        font-size: 34px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+
+      .txt {
+        font-family: $font-main-serif;
+        margin-bottom: 20px;
+        @include text-style(16, $black);
+      }
+    }
+
+    .content-box {
+      color: $white;
+      background-color: $brown;
+      padding: 60px 0px;
+      text-align: center;
+
+      .content-list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .content-item {
+        padding: 0 50px;
+
+        .tit {
+          @include text-style(20);
+          margin-bottom: 18px;
+          font-weight: 500;
+        }
+
+        .num {
+          font-size: 40px;
+          font-weight: 500;
+          margin-bottom: 28px;
+        }
+
+        .txt {
+          height: 120px;
+          @include text-style(14);
+          padding: 20px 10px;
+          border-top: 1px solid $white;
+          border-bottom: 1px solid $white;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+
+@include responsive(D) {
+  .national-heritage-number {
+    .tit-box {
+      width: 80%;
+      text-align: center;
+      margin: 100px 10%;
+
+      .tit {
+        font-family: $font-main-serif;
+        @include text-style(50, $black);
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      .txt {
+        font-family: $font-main-serif;
+        @include text-style(20, $black);
+      }
+    }
+
+    .content-box {
+      color: $white;
+      background-color: $brown;
+      padding: 60px 0;
+      text-align: center;
+
+      .content-list {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+      .content-item {
+        padding: 24px;
+        border-right: 1px solid $white;
+
+        &:nth-last-child(1) {
+          border-right: none;
+        }
+
+        .tit {
+          @include text-style(20);
+          margin-bottom: 20px;
+          font-weight: 500;
+        }
+
+        .num {
+          @include text-style(50);
+          font-weight: 500;
+          margin-bottom: 40px;
+        }
+
+        .txt {
+          @include text-style(16);
+          line-height: 26px;
+          padding: 0 16px;
+          border: none;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

@@ -3,12 +3,12 @@ $(function () {
     arrows: false,
     fade: true,
     dots: true,
-    autoplay: true,
+    autoplay: false,
     pauseOnHover: false,
     pauseOnFocus: false,
     autoplaySpeed: 5000,
     customPaging: function (slider, i) {
-      var tit = $(slider.$slides[i]).find('.dot').html();
+      let tit = $(slider.$slides[i]).find('.dot').html();
       return '<div class="pager-tit" class= "+ i +">' + tit + '</div>';
     },
   });
