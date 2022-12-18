@@ -1,0 +1,31 @@
+header {
+  position: relative;
+  z-index: 9999;
+}
+
+.gnb {
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  position: fixed;
+
+  &-wrapper {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-nav-list {
+    display: flex;
+    @include text-style(18, $white);
+    font-weight: 500;
+  }
+
+  &-nav-item {
+    margin-right: 50px;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+}
