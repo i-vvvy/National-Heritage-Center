@@ -321,6 +321,8 @@ template {
 html {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 body {
@@ -881,22 +883,27 @@ header {
     transition: width 5s ease-in-out;
   }
 }
+.national-heritage-number {
+  background-color: #f6f6f6;
+}
 .national-heritage-number .tit-box {
   width: 80%;
   text-align: center;
-  margin: 50px 10%;
+  margin: 0 10%;
+  padding: 40px 0;
 }
 .national-heritage-number .tit-box .tit {
   font-family: "Noto Serif KR", serif;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
   margin-bottom: 20px;
 }
 .national-heritage-number .tit-box .txt {
   font-family: "Noto Serif KR", serif;
-  margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.01em;
-  color: #000000;
 }
 .national-heritage-number .content-box {
   color: #ffffff;
@@ -912,17 +919,20 @@ header {
   padding: 0 4px;
 }
 .national-heritage-number .content-box .content-item .tit {
-  font-size: 16px;
+  font-family: "Noto Serif KR", serif;
+  font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.01em;
   margin-bottom: 18px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .national-heritage-number .content-box .content-item .num {
+  font-family: "Noto Serif KR", serif;
   font-size: 38px;
-  font-weight: 500;
+  font-weight: 700;
 }
 .national-heritage-number .content-box .content-item .txt {
+  font-family: "Noto Serif KR", serif;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.01em;
@@ -935,17 +945,17 @@ header {
   .national-heritage-number .tit-box {
     width: 80%;
     text-align: center;
-    margin: 70px 10%;
+    margin: 0 10%;
+    padding: 90px 0 70px;
   }
   .national-heritage-number .tit-box .tit {
     font-family: "Noto Serif KR", serif;
-    font-size: 34px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 600;
     margin-bottom: 30px;
   }
   .national-heritage-number .tit-box .txt {
     font-family: "Noto Serif KR", serif;
-    margin-bottom: 20px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.01em;
@@ -973,15 +983,15 @@ header {
   }
   .national-heritage-number .content-box .content-item .num {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 28px;
   }
   .national-heritage-number .content-box .content-item .txt {
-    height: 120px;
+    min-height: 140px;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: -0.01em;
-    padding: 20px 10px;
+    padding: 20px 30px;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
   }
@@ -993,17 +1003,14 @@ header {
   .national-heritage-number .tit-box {
     width: 80%;
     text-align: center;
-    margin: 100px 10%;
+    margin: 0 10%;
+    padding: 150px 0 60px;
   }
   .national-heritage-number .tit-box .tit {
     font-family: "Noto Serif KR", serif;
-    font-size: 50px;
-    line-height: 60px;
-    letter-spacing: -0.01em;
-    color: #000000;
     font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
   }
   .national-heritage-number .tit-box .txt {
     font-family: "Noto Serif KR", serif;
@@ -1033,14 +1040,15 @@ header {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: -0.02em;
+    line-height: 36px;
     margin-bottom: 20px;
-    font-weight: 500;
+    font-weight: 700;
   }
   .national-heritage-number .content-box .content-item .num {
     font-size: 50px;
     line-height: 60px;
     letter-spacing: -0.01em;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 40px;
   }
   .national-heritage-number .content-box .content-item .txt {
@@ -1053,6 +1061,241 @@ header {
   }
   .national-heritage-number .content-box .content-item:nth-child(1), .national-heritage-number .content-box .content-item:nth-child(2) {
     margin-bottom: 0px;
+  }
+}
+.educational-program {
+  background-color: #f6f6f6;
+}
+.educational-program .tit-box {
+  width: 80%;
+  text-align: center;
+  margin: 0 10%;
+  padding: 40px 0 20px;
+}
+.educational-program .tit-box .tit {
+  font-family: "Noto Serif KR", serif;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+.educational-program .tit-box .txt {
+  font-family: "Noto Serif KR", serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+.educational-program .tit-box button {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  border: 1px solid #937d63;
+  padding: 4px 10px;
+  border-radius: 15px;
+}
+.educational-program .content-box {
+  text-align: center;
+  padding: 15px 0;
+}
+.educational-program .content-box .program-item {
+  padding: 20px 15px;
+  border-bottom: 1px solid #c1c2c4;
+}
+.educational-program .content-box .program-item:nth-child(1) {
+  border-top: 1px solid #c1c2c4;
+}
+.educational-program .content-box .program-item:nth-last-child(1) {
+  border-bottom: none;
+}
+.educational-program .content-box .program-name {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.educational-program .content-box .date-tit {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.educational-program .content-box .date {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
+}
+.educational-program .content-box .btn-application {
+  padding: 4px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+  background-color: #937d63;
+}
+
+@media screen and (min-width: 768px) {
+  .educational-program {
+    background-color: #e8e8e8;
+  }
+  .educational-program .tit-box {
+    width: 80%;
+    text-align: center;
+    margin: 0 10%;
+    padding: 90px 0 30px;
+  }
+  .educational-program .tit-box .tit {
+    font-family: "Noto Serif KR", serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .educational-program .tit-box .txt {
+    font-family: "Noto Serif KR", serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .educational-program .tit-box button {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    border: 1px solid #937d63;
+    padding: 4px 14px;
+    border-radius: 30px;
+  }
+  .educational-program .content-box {
+    text-align: center;
+    padding: 40px 0;
+  }
+  .educational-program .content-box .program-list {
+    display: flex;
+  }
+  .educational-program .content-box .program-item {
+    padding: 15px 20px;
+    border-right: 1px solid #c1c2c4;
+    border-bottom: none;
+  }
+  .educational-program .content-box .program-item:nth-child(1) {
+    border-top: none;
+  }
+  .educational-program .content-box .program-item:nth-last-child(1) {
+    border-right: none;
+  }
+  .educational-program .content-box .program-name {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+  .educational-program .content-box .date-tit {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .educational-program .content-box .date {
+    margin-bottom: 18px;
+  }
+  .educational-program .content-box .btn-application {
+    padding: 4px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.005em;
+    color: #ffffff;
+    background-color: #937d63;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .educational-program {
+    display: flex;
+    height: 550px;
+    background-color: #e8e8e8;
+  }
+  .educational-program .tit-box {
+    width: 100%;
+    height: 550px;
+    text-align: left;
+    margin-left: 0;
+    padding-right: 0;
+    padding: auto;
+  }
+  .educational-program .tit-box .tit {
+    font-family: "Noto Serif KR", serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .educational-program .tit-box .txt {
+    font-family: "Noto Serif KR", serif;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    line-height: 34px;
+    margin-bottom: 30px;
+  }
+  .educational-program .tit-box button {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    border: 1px solid #937d63;
+    padding: 6px 18px;
+    border-radius: 30px;
+  }
+  .educational-program .content-box-wrap {
+    position: relative;
+  }
+  .educational-program .content-box {
+    position: absolute;
+    text-align: center;
+    padding: 0;
+    background: none;
+    top: -210px;
+    right: 0;
+  }
+  .educational-program .content-box .program-list {
+    display: flex;
+  }
+  .educational-program .content-box .program-item {
+    padding: 30px 40px;
+    border-right: none;
+    border-bottom: none;
+    margin-right: 20px;
+    background-color: pink;
+  }
+  .educational-program .content-box .program-item:nth-last-child(1) {
+    border-right: none;
+    margin-right: 0;
+  }
+  .educational-program .content-box .program-name {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+  .educational-program .content-box .date-tit {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .educational-program .content-box .date {
+    margin-bottom: 22px;
+  }
+  .educational-program .content-box .btn-application {
+    padding: 4px 10px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+    background-color: #937d63;
   }
 }
 

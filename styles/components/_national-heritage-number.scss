@@ -1,18 +1,20 @@
 .national-heritage-number {
+  background-color: #f6f6f6;
   .tit-box {
     width: 80%;
     text-align: center;
-    margin: 50px 10%;
+    margin: 0 10%;
+    padding: 40px 0;
 
     .tit {
       font-family: $font-main-serif;
+      @include text-style(24);
       margin-bottom: 20px;
     }
 
     .txt {
       font-family: $font-main-serif;
-      margin-bottom: 20px;
-      @include text-style(16, $black);
+      @include text-style(14);
     }
   }
 
@@ -30,17 +32,20 @@
       padding: 0 4px;
 
       .tit {
-        @include text-style(16);
+        font-family: $font-main-serif;
+        @include text-style(14);
         margin-bottom: 18px;
-        font-weight: 400;
+        font-weight: 600;
       }
 
       .num {
+        font-family: $font-main-serif;
         font-size: 38px;
-        font-weight: 500;
+        font-weight: 700;
       }
 
       .txt {
+        font-family: $font-main-serif;
         @include text-style(16);
       }
 
@@ -57,18 +62,18 @@
     .tit-box {
       width: 80%;
       text-align: center;
-      margin: 70px 10%;
+      margin: 0 10%;
+      padding: 90px 0 70px;
 
       .tit {
         font-family: $font-main-serif;
-        font-size: 34px;
-        font-weight: 500;
+        font-size: 32px;
+        font-weight: 600;
         margin-bottom: 30px;
       }
 
       .txt {
         font-family: $font-main-serif;
-        margin-bottom: 20px;
         @include text-style(16, $black);
       }
     }
@@ -94,14 +99,14 @@
 
         .num {
           font-size: 40px;
-          font-weight: 500;
+          font-weight: 700;
           margin-bottom: 28px;
         }
 
         .txt {
-          height: 120px;
+          min-height: 140px;
           @include text-style(14);
-          padding: 20px 10px;
+          padding: 20px 30px;
           border-top: 1px solid $white;
           border-bottom: 1px solid $white;
         }
@@ -120,14 +125,14 @@
     .tit-box {
       width: 80%;
       text-align: center;
-      margin: 100px 10%;
+      margin: 0 10%;
+      padding: 150px 0 60px;
 
       .tit {
         font-family: $font-main-serif;
-        @include text-style(50, $black);
         font-size: 40px;
-        font-weight: 500;
-        margin-bottom: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
       }
 
       .txt {
@@ -156,13 +161,14 @@
 
         .tit {
           @include text-style(20);
+          line-height: 36px;
           margin-bottom: 20px;
-          font-weight: 500;
+          font-weight: 700;
         }
 
         .num {
           @include text-style(50);
-          font-weight: 500;
+          font-weight: 700;
           margin-bottom: 40px;
         }
 

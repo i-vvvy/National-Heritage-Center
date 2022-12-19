@@ -9,6 +9,8 @@
 html {
   font-family: $font-main-sans;
   font-size: $font-size-16;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 body {

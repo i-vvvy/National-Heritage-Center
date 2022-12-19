@@ -1,0 +1,231 @@
+.educational-program {
+  background-color: $tertiary;
+  .tit-box {
+    width: 80%;
+    text-align: center;
+    margin: 0 10%;
+    padding: 40px 0 20px;
+
+    .tit {
+      font-family: $font-main-serif;
+      @include text-style(24);
+      margin-bottom: 20px;
+    }
+
+    .txt {
+      font-family: $font-main-serif;
+      @include text-style(14);
+      margin-bottom: 20px;
+    }
+
+    button {
+      @include text-style(12);
+      border: 1px solid $brown;
+      padding: 4px 10px;
+      border-radius: 15px;
+    }
+  }
+
+  .content-box {
+    text-align: center;
+    padding: 15px 0;
+
+    .program-item {
+      padding: 20px 15px;
+      border-bottom: 1px solid $border;
+
+      &:nth-child(1) {
+        border-top: 1px solid $border;
+      }
+      &:nth-last-child(1) {
+        border-bottom: none;
+      }
+    }
+
+    .program-name {
+      @include text-style(18);
+      margin-bottom: 16px;
+    }
+
+    .date-tit {
+      @include text-style(16);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .date {
+      @include text-style(16);
+      margin-bottom: 18px;
+    }
+
+    .btn-application {
+      padding: 4px 10px;
+      @include text-style(12, $white);
+      background-color: $brown;
+    }
+  }
+}
+
+@include responsive(T) {
+  .educational-program {
+    background-color: $secondary;
+
+    .tit-box {
+      width: 80%;
+      text-align: center;
+      margin: 0 10%;
+      padding: 90px 0 30px;
+
+      .tit {
+        font-family: $font-main-serif;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+
+      .txt {
+        font-family: $font-main-serif;
+        @include text-style(16, $black);
+        margin-bottom: 30px;
+      }
+
+      button {
+        @include text-style(14);
+        border: 1px solid $brown;
+        padding: 4px 14px;
+        border-radius: 30px;
+      }
+    }
+
+    .content-box {
+      text-align: center;
+      padding: 40px 0;
+
+      .program-list {
+        display: flex;
+      }
+
+      .program-item {
+        padding: 15px 20px;
+        border-right: 1px solid $border;
+        border-bottom: none;
+        &:nth-child(1) {
+          border-top: none;
+        }
+        &:nth-last-child(1) {
+          border-right: none;
+        }
+      }
+
+      .program-name {
+        @include text-style(18);
+        margin-bottom: 16px;
+      }
+
+      .date-tit {
+        @include text-style(16);
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+
+      .date {
+        margin-bottom: 18px;
+      }
+
+      .btn-application {
+        padding: 4px 10px;
+        @include text-style(12, $white);
+        background-color: $brown;
+      }
+    }
+  }
+}
+
+@include responsive(D) {
+  .educational-program {
+    display: flex;
+    height: 550px;
+    background-color: $secondary;
+
+    .tit-box {
+      width: 100%;
+      height: 550px;
+      text-align: left;
+      margin-left: 0;
+      padding-right: 0;
+      padding: auto;
+
+      .tit {
+        font-family: $font-main-serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+
+      .txt {
+        font-family: $font-main-serif;
+        @include text-style(18, $black);
+        line-height: 34px;
+        margin-bottom: 30px;
+      }
+
+      button {
+        @include text-style(16);
+        border: 1px solid $brown;
+        padding: 6px 18px;
+        border-radius: 30px;
+      }
+    }
+
+    .content-box-wrap {
+      position: relative;
+    }
+
+    .content-box {
+      position: absolute;
+      text-align: center;
+      padding: 0;
+      background: none;
+      top: -210px;
+      right: 0;
+
+      .program-list {
+        display: flex;
+      }
+
+      .program-item {
+        padding: 30px 40px;
+        border-right: none;
+        border-bottom: none;
+        margin-right: 20px;
+        background-color: pink;
+
+        &:nth-last-child(1) {
+          border-right: none;
+          margin-right: 0;
+        }
+      }
+
+      .program-name {
+        @include text-style(18);
+        margin-bottom: 16px;
+      }
+
+      .date-tit {
+        @include text-style(16);
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+
+      .date {
+        margin-bottom: 22px;
+      }
+
+      .btn-application {
+        padding: 4px 10px;
+        @include text-style(14, $white);
+        background-color: $brown;
+      }
+    }
+  }
+}
