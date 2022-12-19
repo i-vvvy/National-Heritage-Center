@@ -1,0 +1,250 @@
+.center-news {
+  .tit-box {
+    width: 80%;
+    text-align: center;
+    margin: 0 10%;
+    padding: 40px 0 50px;
+
+    .tit {
+      font-family: $font-main-serif;
+      @include text-style(24);
+      margin-bottom: 20px;
+    }
+
+    .txt {
+      font-family: $font-main-serif;
+      @include text-style(14);
+      margin-bottom: 20px;
+    }
+
+    .btn-more {
+      @include text-style(12);
+      border: 1px solid $brown;
+      padding: 4px 10px;
+      border-radius: 15px;
+    }
+  }
+
+  .news-tabs-wrap {
+    margin: 0 auto;
+
+    .news-tabs {
+      li {
+        background: none;
+        display: inline-block;
+        padding: 15px;
+        cursor: pointer;
+
+        &.current {
+          background: $tertiary;
+          border-top: 3px solid $brown;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .tab-content {
+      display: none;
+      background: $tertiary;
+      padding: 15px;
+
+      &.current {
+        display: inherit;
+      }
+    }
+
+    .news-table {
+      @include text-style(14);
+
+      tr {
+        height: 56px;
+      }
+
+      th {
+        text-align: center;
+        padding: 0 10px;
+        border-bottom: 1px solid $border;
+      }
+
+      td {
+        width: 100%;
+        padding: 0 10px;
+        border-bottom: 1px solid $border;
+      }
+    }
+  }
+}
+
+@include responsive(T) {
+  .center-news {
+    .tit-box {
+      width: 80%;
+      text-align: center;
+      margin: 0 10%;
+      padding: 90px 0 70px;
+
+      .tit {
+        font-family: $font-main-serif;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+
+      .txt {
+        font-family: $font-main-serif;
+        @include text-style(16, $black);
+        margin-bottom: 30px;
+      }
+
+      .btn-more {
+        @include text-style(14);
+        border: 1px solid $brown;
+        padding: 4px 14px;
+        border-radius: 30px;
+      }
+    }
+
+    .news-tabs-wrap {
+      margin: 0 auto;
+
+      .news-tabs {
+        width: 304px;
+        margin: auto;
+        text-align: center;
+
+        li {
+          background: none;
+          display: inline-block;
+          padding: 15px;
+          width: 150px;
+          cursor: pointer;
+
+          &.current {
+            background: $tertiary;
+            border-top: 3px solid $brown;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .tab-content {
+        display: none;
+        background: $tertiary;
+        padding: 20px;
+
+        &.current {
+          display: inherit;
+        }
+      }
+
+      .news-table {
+        @include text-style(16);
+
+        tr {
+          height: 60px;
+        }
+
+        th {
+          text-align: center;
+          padding: 0 20px;
+          border-bottom: 1px solid $border;
+        }
+
+        td {
+          width: 100%;
+          padding: 0 20px;
+          border-bottom: 1px solid $border;
+        }
+      }
+    }
+  }
+}
+
+@include responsive(D) {
+  .center-news {
+    .tit-box {
+      width: 80%;
+      text-align: center;
+      margin: 0 10%;
+      padding: 180px 0 100px;
+
+      .tit {
+        font-family: $font-main-serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 40px;
+      }
+
+      .txt {
+        font-family: $font-main-serif;
+        @include text-style(18, $black);
+        margin-bottom: 30px;
+      }
+
+      .btn-more {
+        @include text-style(16);
+        border: 1px solid $brown;
+        padding: 6px 18px;
+        border-radius: 30px;
+        display: block;
+        margin: auto;
+        cursor: pointer;
+      }
+    }
+
+    .news-tabs-wrap {
+      margin: 0 auto;
+
+      .news-tabs {
+        width: 504px;
+        margin: auto;
+        text-align: center;
+
+        li {
+          @include text-style(20);
+          background: none;
+          display: inline-block;
+          padding: 20px;
+          width: 250px;
+
+          &.current {
+            background: $tertiary;
+            border-top: 4px solid $brown;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .tab-content {
+        display: none;
+        background: $tertiary;
+        padding: 20px;
+
+        &.current {
+          display: inherit;
+        }
+      }
+
+      .news-table {
+        @include text-style(20);
+        padding: 0 80px;
+
+        tr {
+          height: 70px;
+        }
+
+        th {
+          text-align: center;
+          padding: 0 30px;
+          border-bottom: 1px solid $border;
+        }
+
+        td {
+          width: 100%;
+          padding: 0 30px;
+          border-bottom: 1px solid $border;
+        }
+      }
+    }
+  }
+}
