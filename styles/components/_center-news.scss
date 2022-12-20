@@ -29,11 +29,15 @@
     margin: 0 auto;
 
     .news-tabs {
+      width: 204px;
+      margin: auto;
+
       li {
+        width: 100px;
         background: none;
         display: inline-block;
         padding: 15px;
-        cursor: pointer;
+        text-align: center;
 
         &.current {
           background: $tertiary;
@@ -55,6 +59,7 @@
 
     .news-table {
       @include text-style(14);
+      padding-bottom: 20px;
 
       tr {
         height: 56px;
@@ -139,6 +144,7 @@
 
       .news-table {
         @include text-style(16);
+        padding-bottom: 20px;
 
         tr {
           height: 60px;
@@ -152,7 +158,7 @@
 
         td {
           width: 100%;
-          padding: 0 20px;
+          padding: 0 10px;
           border-bottom: 1px solid $border;
         }
       }
@@ -227,7 +233,7 @@
 
       .news-table {
         @include text-style(20);
-        padding: 0 80px;
+        padding: 0 80px 20px;
 
         tr {
           height: 70px;
@@ -241,7 +247,7 @@
 
         td {
           width: 100%;
-          padding: 0 30px;
+          padding: 0 20px;
           border-bottom: 1px solid $border;
         }
       }

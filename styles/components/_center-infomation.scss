@@ -1,0 +1,306 @@
+.center-infomation {
+  background-color: #dadada;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+
+  .title {
+    @include text-style(18);
+    padding-bottom: 6px;
+    border-bottom: 2px solid $border;
+  }
+
+  .tit {
+    @include text-style(18);
+    font-weight: 500;
+    width: 110px;
+  }
+
+  .txt {
+    @include text-style(18);
+  }
+
+  .inquiry {
+    margin-bottom: 30px;
+
+    .content-box {
+      display: flex;
+      margin: 10px;
+    }
+
+    .info-box {
+      @include text-style(16);
+      margin: 10px;
+    }
+
+    .btn-box {
+      margin: 15px 10px;
+      button {
+        @include text-style(14);
+        color: $white;
+        padding: 4px 8px 6px;
+        margin-right: 10px;
+        background-color: $brown;
+      }
+    }
+  }
+
+  .time {
+    margin-bottom: 30px;
+
+    .time-list {
+      margin: 10px;
+
+      li {
+        @include text-style(16);
+        display: flex;
+      }
+    }
+
+    .info-box {
+      margin: 10px;
+    }
+  }
+
+  .vr {
+    height: 200px;
+    background-color: pink;
+    position: relative;
+
+    .content-box {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      p {
+        width: 50px;
+        height: 30px;
+        line-height: 26px;
+        margin: auto;
+        border: 1px solid $white;
+        margin-bottom: 20px;
+        color: $white;
+        font-weight: 500;
+      }
+
+      h4 {
+        @include text-style(18, $white);
+      }
+    }
+  }
+}
+
+@include responsive(T) {
+  .center-infomation {
+    background-color: #dadada;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+
+    .center-info-top {
+      display: flex;
+    }
+    .title {
+      @include text-style(18);
+      padding-bottom: 6px;
+      border-bottom: 2px solid $border;
+    }
+
+    .tit {
+      @include text-style(18);
+      font-weight: 500;
+      width: 110px;
+    }
+
+    .txt {
+      @include text-style(18);
+    }
+
+    .inquiry {
+      margin-bottom: 30px;
+      display: block;
+      margin-right: 50px;
+
+      .content-box {
+        display: flex;
+        margin: 10px;
+        margin-bottom: 15px;
+      }
+
+      .info-box {
+        @include text-style(16);
+        margin: 10px;
+        margin-bottom: 20px;
+      }
+
+      .btn-box {
+        margin: 15px 10px;
+        button {
+          @include text-style(14);
+          color: $white;
+          padding: 4px 8px 6px;
+          margin-right: 10px;
+          background-color: $brown;
+        }
+      }
+    }
+
+    .time {
+      margin-bottom: 30px;
+
+      .time-list {
+        margin: 10px;
+        margin-bottom: 15px;
+
+        li {
+          @include text-style(16);
+          display: flex;
+        }
+      }
+
+      .info-box {
+        margin: 10px;
+      }
+    }
+
+    .vr {
+      height: 200px;
+      background-color: pink;
+      position: relative;
+
+      .content-box {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        p {
+          width: 50px;
+          height: 30px;
+          line-height: 26px;
+          margin: auto;
+          border: 1px solid $white;
+          margin-bottom: 20px;
+          color: $white;
+          font-weight: 500;
+        }
+
+        h4 {
+          @include text-style(18, $white);
+        }
+      }
+    }
+  }
+}
+
+@include responsive(D) {
+  .center-infomation {
+    background-color: #dadada;
+    display: flex;
+    padding: 30px 0;
+
+    .lg-row {
+      display: flex;
+    }
+
+    .center-info-top {
+      display: flex;
+    }
+
+    .title {
+      @include text-style(18);
+      padding-bottom: 6px;
+      border-bottom: 2px solid $border;
+    }
+
+    .tit {
+      @include text-style(18);
+      font-weight: 500;
+      width: 110px;
+    }
+
+    .txt {
+      @include text-style(18);
+    }
+
+    .inquiry {
+      margin-bottom: 30px;
+      display: block;
+      margin-right: 50px;
+
+      .content-box {
+        display: flex;
+        margin: 10px;
+        margin-bottom: 15px;
+      }
+
+      .info-box {
+        @include text-style(16);
+        margin: 10px;
+        margin-bottom: 20px;
+      }
+
+      .btn-box {
+        margin: 15px 10px;
+        button {
+          @include text-style(14);
+          color: $white;
+          padding: 4px 8px 6px;
+          margin-right: 10px;
+          background-color: $brown;
+        }
+      }
+    }
+
+    .time {
+      margin-bottom: 30px;
+      margin-right: 50px;
+
+      .time-list {
+        margin: 10px;
+        margin-bottom: 15px;
+
+        li {
+          @include text-style(16);
+          display: flex;
+        }
+      }
+
+      .info-box {
+        margin: 10px;
+      }
+    }
+
+    .vr {
+      height: 200px;
+      background-color: pink;
+      position: relative;
+
+      .content-box {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        p {
+          width: 50px;
+          height: 30px;
+          line-height: 26px;
+          margin: auto;
+          border: 1px solid $white;
+          margin-bottom: 20px;
+          color: $white;
+          font-weight: 500;
+        }
+
+        h4 {
+          @include text-style(18, $white);
+        }
+      }
+    }
+  }
+}

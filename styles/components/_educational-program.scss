@@ -69,12 +69,13 @@
 @include responsive(T) {
   .educational-program {
     background-color: $secondary;
+    padding-bottom: 30px;
 
     .tit-box {
       width: 80%;
       text-align: center;
       margin: 0 10%;
-      padding: 90px 0 30px;
+      padding: 90px 0 20px;
 
       .tit {
         font-family: $font-main-serif;

@@ -327,7 +327,7 @@ html {
 
 body {
   font-family: "Noto Sans KR", sans-serif;
-  color: #3f4150;
+  color: #515152;
 }
 
 h1 {
@@ -1139,12 +1139,13 @@ header {
 @media screen and (min-width: 768px) {
   .educational-program {
     background-color: #e8e8e8;
+    padding-bottom: 30px;
   }
   .educational-program .tit-box {
     width: 80%;
     text-align: center;
     margin: 0 10%;
-    padding: 90px 0 30px;
+    padding: 90px 0 20px;
   }
   .educational-program .tit-box .tit {
     font-family: "Noto Serif KR", serif;
@@ -1334,11 +1335,16 @@ header {
 .center-news .news-tabs-wrap {
   margin: 0 auto;
 }
+.center-news .news-tabs-wrap .news-tabs {
+  width: 204px;
+  margin: auto;
+}
 .center-news .news-tabs-wrap .news-tabs li {
+  width: 100px;
   background: none;
   display: inline-block;
   padding: 15px;
-  cursor: pointer;
+  text-align: center;
 }
 .center-news .news-tabs-wrap .news-tabs li.current {
   background: #f6f6f6;
@@ -1357,6 +1363,7 @@ header {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.01em;
+  padding-bottom: 20px;
 }
 .center-news .news-tabs-wrap .news-table tr {
   height: 56px;
@@ -1433,6 +1440,7 @@ header {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.01em;
+    padding-bottom: 20px;
   }
   .center-news .news-tabs-wrap .news-table tr {
     height: 60px;
@@ -1444,7 +1452,7 @@ header {
   }
   .center-news .news-tabs-wrap .news-table td {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
     border-bottom: 1px solid #c1c2c4;
   }
 }
@@ -1514,7 +1522,7 @@ header {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: -0.02em;
-    padding: 0 80px;
+    padding: 0 80px 20px;
   }
   .center-news .news-tabs-wrap .news-table tr {
     height: 70px;
@@ -1526,8 +1534,311 @@ header {
   }
   .center-news .news-tabs-wrap .news-table td {
     width: 100%;
-    padding: 0 30px;
+    padding: 0 20px;
     border-bottom: 1px solid #c1c2c4;
+  }
+}
+.center-infomation {
+  background-color: #dadada;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+}
+.center-infomation .title {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #c1c2c4;
+}
+.center-infomation .tit {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  width: 110px;
+}
+.center-infomation .txt {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+.center-infomation .inquiry {
+  margin-bottom: 30px;
+}
+.center-infomation .inquiry .content-box {
+  display: flex;
+  margin: 10px;
+}
+.center-infomation .inquiry .info-box {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  margin: 10px;
+}
+.center-infomation .inquiry .btn-box {
+  margin: 15px 10px;
+}
+.center-infomation .inquiry .btn-box button {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  padding: 4px 8px 6px;
+  margin-right: 10px;
+  background-color: #937d63;
+}
+.center-infomation .time {
+  margin-bottom: 30px;
+}
+.center-infomation .time .time-list {
+  margin: 10px;
+}
+.center-infomation .time .time-list li {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  display: flex;
+}
+.center-infomation .time .info-box {
+  margin: 10px;
+}
+.center-infomation .vr {
+  height: 200px;
+  background-color: pink;
+  position: relative;
+}
+.center-infomation .vr .content-box {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center-infomation .vr .content-box p {
+  width: 50px;
+  height: 30px;
+  line-height: 26px;
+  margin: auto;
+  border: 1px solid #ffffff;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.center-infomation .vr .content-box h4 {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .center-infomation {
+    background-color: #dadada;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  .center-infomation .center-info-top {
+    display: flex;
+  }
+  .center-infomation .title {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #c1c2c4;
+  }
+  .center-infomation .tit {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    width: 110px;
+  }
+  .center-infomation .txt {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+  }
+  .center-infomation .inquiry {
+    margin-bottom: 30px;
+    display: block;
+    margin-right: 50px;
+  }
+  .center-infomation .inquiry .content-box {
+    display: flex;
+    margin: 10px;
+    margin-bottom: 15px;
+  }
+  .center-infomation .inquiry .info-box {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .center-infomation .inquiry .btn-box {
+    margin: 15px 10px;
+  }
+  .center-infomation .inquiry .btn-box button {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+    padding: 4px 8px 6px;
+    margin-right: 10px;
+    background-color: #937d63;
+  }
+  .center-infomation .time {
+    margin-bottom: 30px;
+  }
+  .center-infomation .time .time-list {
+    margin: 10px;
+    margin-bottom: 15px;
+  }
+  .center-infomation .time .time-list li {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    display: flex;
+  }
+  .center-infomation .time .info-box {
+    margin: 10px;
+  }
+  .center-infomation .vr {
+    height: 200px;
+    background-color: pink;
+    position: relative;
+  }
+  .center-infomation .vr .content-box {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .center-infomation .vr .content-box p {
+    width: 50px;
+    height: 30px;
+    line-height: 26px;
+    margin: auto;
+    border: 1px solid #ffffff;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .center-infomation .vr .content-box h4 {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .center-infomation {
+    background-color: #dadada;
+    display: flex;
+    padding: 30px 0;
+  }
+  .center-infomation .lg-row {
+    display: flex;
+  }
+  .center-infomation .center-info-top {
+    display: flex;
+  }
+  .center-infomation .title {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #c1c2c4;
+  }
+  .center-infomation .tit {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    width: 110px;
+  }
+  .center-infomation .txt {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+  }
+  .center-infomation .inquiry {
+    margin-bottom: 30px;
+    display: block;
+    margin-right: 50px;
+  }
+  .center-infomation .inquiry .content-box {
+    display: flex;
+    margin: 10px;
+    margin-bottom: 15px;
+  }
+  .center-infomation .inquiry .info-box {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .center-infomation .inquiry .btn-box {
+    margin: 15px 10px;
+  }
+  .center-infomation .inquiry .btn-box button {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+    padding: 4px 8px 6px;
+    margin-right: 10px;
+    background-color: #937d63;
+  }
+  .center-infomation .time {
+    margin-bottom: 30px;
+    margin-right: 50px;
+  }
+  .center-infomation .time .time-list {
+    margin: 10px;
+    margin-bottom: 15px;
+  }
+  .center-infomation .time .time-list li {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    display: flex;
+  }
+  .center-infomation .time .info-box {
+    margin: 10px;
+  }
+  .center-infomation .vr {
+    height: 200px;
+    background-color: pink;
+    position: relative;
+  }
+  .center-infomation .vr .content-box {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .center-infomation .vr .content-box p {
+    width: 50px;
+    height: 30px;
+    line-height: 26px;
+    margin: auto;
+    border: 1px solid #ffffff;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .center-infomation .vr .content-box h4 {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
   }
 }
 
