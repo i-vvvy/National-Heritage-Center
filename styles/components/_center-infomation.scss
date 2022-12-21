@@ -5,19 +5,19 @@
   padding: 30px 10px;
 
   .title {
-    @include text-style(18);
+    @include text-style(16);
     padding-bottom: 6px;
     border-bottom: 2px solid $border;
   }
 
   .tit {
-    @include text-style(18);
+    @include text-style(16);
     font-weight: 500;
     width: 110px;
   }
 
   .txt {
-    @include text-style(18);
+    @include text-style(16);
   }
 
   .inquiry {
@@ -29,7 +29,7 @@
     }
 
     .info-box {
-      @include text-style(16);
+      @include text-style(14);
       margin: 10px;
     }
 
@@ -40,7 +40,7 @@
         color: $white;
         padding: 4px 8px 6px;
         margin-right: 10px;
-        background-color: $brown;
+        background-color: #777777;
       }
     }
   }
@@ -53,12 +53,14 @@
 
       li {
         @include text-style(16);
+        line-height: 36px;
         display: flex;
       }
     }
 
     .info-box {
       margin: 10px;
+      @include text-style(14);
     }
   }
 
@@ -142,7 +144,7 @@
           color: $white;
           padding: 4px 8px 6px;
           margin-right: 10px;
-          background-color: $brown;
+          background-color: #777777;
         }
       }
     }
@@ -200,7 +202,7 @@
   .center-infomation {
     background-color: #dadada;
     display: flex;
-    padding: 30px 0;
+    padding: 60px 0;
 
     .lg-row {
       display: flex;
@@ -227,7 +229,7 @@
     }
 
     .inquiry {
-      margin-bottom: 30px;
+      margin-bottom: 0px;
       display: block;
       margin-right: 50px;
 
@@ -244,19 +246,20 @@
       }
 
       .btn-box {
-        margin: 15px 10px;
+        margin: 15px 10px 0;
         button {
-          @include text-style(14);
+          @include text-style(16);
           color: $white;
-          padding: 4px 8px 6px;
-          margin-right: 10px;
-          background-color: $brown;
+          padding: 4px 14px 6px;
+          margin-right: 12px;
+          background-color: #777777;
+          font-weight: 500;
         }
       }
     }
 
     .time {
-      margin-bottom: 30px;
+      margin-bottom: 0px;
       margin-right: 50px;
 
       .time-list {

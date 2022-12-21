@@ -60,7 +60,7 @@
 
     .btn-application {
       padding: 4px 10px;
-      @include text-style(12, $white);
+      @include text-style(14, $white);
       background-color: $brown;
     }
   }
