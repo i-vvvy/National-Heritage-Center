@@ -23,6 +23,12 @@
       border: 1px solid $brown;
       padding: 4px 10px;
       border-radius: 15px;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        background-color: $brown;
+        color: $white;
+      }
     }
   }
 
@@ -62,6 +68,12 @@
       padding: 4px 10px;
       @include text-style(14, $white);
       background-color: $brown;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        font-weight: 500;
+        color: $white;
+      }
     }
   }
 }
@@ -79,7 +91,7 @@
 
       .tit {
         font-family: $font-main-serif;
-        font-size: 32px;
+        @include text-style(32);
         font-weight: 600;
         margin-bottom: 30px;
       }
@@ -159,7 +171,7 @@
 
       .tit {
         font-family: $font-main-serif;
-        font-size: 40px;
+        @include text-style(40);
         font-weight: 600;
         margin-bottom: 40px;
       }
@@ -197,15 +209,31 @@
 
       .program-item {
         position: relative;
-        padding: 40px 40px 60px;
+        padding: 0;
+        width: 280px;
+        height: 380px;
         border-right: none;
         border-bottom: none;
         margin-right: 20px;
-        background-color: pink;
+        background-color: #483724;
+        overflow: hidden;
 
         &:nth-last-child(1) {
           border-right: none;
           margin-right: 0;
+        }
+
+        img {
+          width: 100%;
+          opacity: 0.15;
+          filter: grayscale(0.7);
+        }
+
+        .program-content {
+          position: absolute;
+          top: 0;
+          padding: 50px 40px;
+          color: $white;
         }
       }
 
@@ -231,6 +259,11 @@
         background-color: $brown;
         right: 0;
         bottom: 0;
+
+        &:hover {
+          font-weight: 500;
+          color: $white;
+        }
       }
     }
   }

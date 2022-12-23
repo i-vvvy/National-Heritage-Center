@@ -1,6 +1,6 @@
 $(function () {
   $('.news-tabs li').click(function () {
-    var tab_id = $(this).attr('data-tab');
+    let tab_id = $(this).attr('data-tab');
 
     $('.news-tabs li').removeClass('current');
     $('.tab-content').removeClass('current');

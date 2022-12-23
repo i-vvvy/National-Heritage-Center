@@ -66,8 +66,14 @@
 
   .vr {
     height: 200px;
-    background-color: pink;
+    background-color: $dark;
     position: relative;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      opacity: 0.3;
+    }
 
     .content-box {
       position: absolute;
@@ -169,8 +175,16 @@
 
     .vr {
       height: 200px;
-      background-color: pink;
+      background-color: $dark;
       position: relative;
+      overflow: hidden;
+
+      img {
+        margin-top: -100px;
+        width: 100%;
+        height: auto;
+        opacity: 0.3;
+      }
 
       .content-box {
         position: absolute;
@@ -279,8 +293,15 @@
 
     .vr {
       height: 200px;
-      background-color: pink;
+      background-color: $dark;
       position: relative;
+
+      img {
+        margin-top: 0px;
+        width: auto;
+        height: 100%;
+        opacity: 0.3;
+      }
 
       .content-box {
         position: absolute;
@@ -288,6 +309,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        &:hover p {
+          background: $white;
+          color: $dark;
+        }
 
         p {
           width: 50px;
@@ -298,6 +324,7 @@
           margin-bottom: 20px;
           color: $white;
           font-weight: 500;
+          transition: all 0.2s ease-in;
         }
 
         h4 {

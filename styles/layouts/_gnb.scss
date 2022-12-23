@@ -3,7 +3,7 @@ header {
   z-index: 9999;
 
   .gnb {
-    background-color: rgb(33, 33, 33, 0.9);
+    background-color: rgb(33, 33, 33, 0.98);
     width: 100%;
     position: fixed;
 
@@ -26,6 +26,14 @@ header {
       display: flex;
       justify-content: space-between;
     }
+
+    .gnb-open-button.is-active {
+      display: none;
+    }
+
+    .gnb-close-button.is-active {
+      display: none;
+    }
   }
 }
 
@@ -35,7 +43,7 @@ header {
     z-index: 9999;
 
     .gnb {
-      background-color: rgb(33, 33, 33, 0.9);
+      background-color: rgb(33, 33, 33, 0.98);
       width: 100%;
       position: fixed;
 
@@ -131,7 +139,6 @@ header {
           width: 100%;
           height: 40px;
           text-align: center;
-          font-size: 16px;
           line-height: 3;
           color: #dddddd;
           @include text-style(18);

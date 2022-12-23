@@ -43,7 +43,7 @@
 
   h2 {
     font-family: $font-main-serif;
-    font-size: 30px;
+    @include text-style(30);
     font-weight: 400;
     margin-bottom: 15%;
   }
@@ -91,9 +91,8 @@
     .txt {
       width: 100%;
       font-family: $font-main-serif;
-      font-size: 20px;
+      @include text-style(20);
       line-height: 40px;
-      letter-spacing: -0.02em;
       margin-bottom: 30px;
     }
 
@@ -108,9 +107,8 @@
 
     h2 {
       font-family: $font-main-serif;
-      font-size: 50px;
+      @include text-style(50);
       font-weight: 400;
-      letter-spacing: -0.02em;
     }
   }
 
@@ -167,10 +165,8 @@
 
       .pager-tit {
         margin-top: 25px;
-        color: $white;
-        font-size: 15px;
+        @include text-style(16, $white);
         text-align: left;
-        letter-spacing: -1px;
         text-align: center;
       }
 
@@ -241,9 +237,8 @@
 
     h2 {
       font-family: $font-main-serif;
-      font-size: 56px;
+      @include text-style(56);
       font-weight: 400;
-      letter-spacing: -0.02em;
       margin-bottom: 15%;
     }
   }
@@ -301,10 +296,8 @@
 
       .pager-tit {
         margin-top: 25px;
-        color: $white;
-        font-size: 15px;
+        @include text-style(16, $white);
         text-align: left;
-        letter-spacing: -1px;
         text-align: center;
       }
 

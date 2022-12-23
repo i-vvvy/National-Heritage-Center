@@ -7,8 +7,8 @@
     <title>천연기념물센터 | 프로젝트</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="css/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     
@@ -95,12 +95,22 @@
                   </nav>
 
                   <button
-                    class="gnb-icon-button is-menu lg-hidden"
+                    class="gnb-open-button is-menu lg-hidden"
                     type="button"
                     aria-label="메뉴 열기 버튼"
                   >
                     <span class="material-symbols-outlined" style="font-size:40px; color:#dddddd;">
                     menu
+                    </span>
+                  </button>
+
+                  <button
+                    class="gnb-close-button is-menu is-active lg-hidden"
+                    type="button"
+                    aria-label="메뉴 닫기 버튼"
+                  >
+                  <span class="material-symbols-outlined" style="font-size:40px; color:#dddddd;">
+                    close
                     </span>
                   </button>
                 </div>
@@ -210,8 +220,8 @@
         </div>
       </div>
 
-      <section class="national-heritage-number">
-        <div class="tit-box">
+      <section class="national-heritage-number" >
+        <div class="tit-box" data-aos="fade-up" data-aos-duration="800">
           <h2 class="tit">숫자로 보는 천연기념물</h2>
           <p class="txt sm-only">
             천연기념물 중에 궁금한 사항을 <br />알기쉽게 숫자로 알아볼 수
@@ -221,14 +231,14 @@
             천연기념물 중에 궁금한 사항을 알기쉽게 숫자로 알아볼 수 있습니다.
           </p>
         </div>
-        <div class="content-box">
+        <div class="content-box" data-aos="fade-up" data-aos-duration="800">
           <div class="container">
             <div class="row">
               <div class="col-sm-4">
                 <ul class="content-list">
                   <li class="content-item col-sm-2 col-md-6 col-lg-3">
                     <h4 class="tit">대구 도동 측백나무 숲</h4>
-                    <p class="num">1</p>
+                    <p class="num" data-aos="flip-down" data-aos-duration="800">1</p>
                     <p class="txt sm-hidden">
                       천연기념물 1호인 '대구 도동측백나무 숲'은 생태학적 가치를
                       인정받아 지정하여 보호하고 있습니다.
@@ -236,7 +246,7 @@
                   </li>
                   <li class="content-item col-sm-2 col-md-6 col-lg-3">
                     <h4 class="tit">천연기념물 1호 탄생일</h4>
-                    <p class="num">1962</p>
+                    <p class="num" data-aos="flip-down" data-aos-duration="800">1962</p>
                     <p class="txt sm-hidden">
                       1962년 12월 측백나무 숲이 천연기념물 1호로 등록된 해이며,
                       이후 수 많은 천연기념물을 지정, 보호하고 있습니다.
@@ -244,7 +254,7 @@
                   </li>
                   <li class="content-item col-sm-2 col-md-6 col-lg-3">
                     <h4 class="tit">독도 천연보호구역</h4>
-                    <p class="num">336</p>
+                    <p class="num" data-aos="flip-down" data-aos-duration="800">336</p>
                     <p class="txt sm-hidden">
                       우리나라의 화산섬 중 가장 오래된 독도는 천연기념물
                       제336호로 등록되어 있습니다.
@@ -252,7 +262,7 @@
                   </li>
                   <li class="content-item col-sm-2 col-md-6 col-lg-3">
                     <h4 class="tit">현재 천연기념물 총 개수</h4>
-                    <p class="num">464</p>
+                    <p class="num" data-aos="flip-down" data-aos-duration="800">464</p>
                     <p class="txt sm-hidden">
                       현재 국내 천연기념물 총 개수는 2021년 6월 통계기준으로
                       464점이 등록되어 있습니다.
@@ -265,8 +275,8 @@
         </div>
       </section>
 
-      <section class="educational-program">
-        <div class="container">
+      <section class="educational-program" >
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
           <div class="row">
             <div class="col-sm-4">
               <div class="tit-box">
@@ -290,6 +300,9 @@
                 <div class="content-box">
                   <ul class="program-list">
                     <li class="program-item col-lg-3">
+                      <div class="program-img lg-only">
+                        <img src="/assets/images/img-educational-01" alt="우리 선조들이 이용한 천연기념물 식물 프로그램 이미지">
+                      </div>
                       <div class="program-content">
                         <h4 class="program-name">
                           우리 선조들이 이용한 천연기념물 식물
@@ -307,6 +320,9 @@
                       <button class="btn-application">신청하기</button>
                     </li>
                     <li class="program-item col-lg-3">
+                      <div class="program-img lg-only">
+                        <img src="/assets/images/img-educational-01" alt="우리 선조들이 이용한 천연기념물 식물 프로그램 이미지">
+                      </div>
                       <div class="program-content">
                         <h4 class="program-name">
                           우리 선조들이 이용한 천연기념물 식물
@@ -324,6 +340,9 @@
                       <button class="btn-application">신청하기</button>
                     </li>
                     <li class="program-item col-lg-3">
+                      <div class="program-img lg-only">
+                        <img src="/assets/images/img-educational-02" alt="옛 문헌과 이야기에 담긴 천연기념물 동물 프로그램 이미지">
+                      </div>
                       <div class="program-content">
                         <h4 class="program-name">
                           옛 문헌과 이야기에 담긴 천연기념물 동물
@@ -348,7 +367,7 @@
         </div>
       </section>
 
-      <section class="center-news">
+      <section class="center-news" data-aos="fade-up" data-aos-duration="1800">
         <div class="tit-box">
           <h2 class="tit">천연기념물센터 소식</h2>
           <p class="txt sm-only">
@@ -485,7 +504,7 @@
                   </div>
                 </div>
                 <div class="vr col-md-12 col-lg-4">
-                  <img src="" alt="">
+                  <img src="/assets/images/img-vr" alt="전시관 VR 이미지">
                   <div class="content-box">
                     <p>VR</p>
                     <h4>미리 만나는 전시관 VR</h4>
@@ -556,22 +575,126 @@
               </div>
               
               </div>
-              <div class="copyright">Copyright © 2022 NATIONAL HERITAGE CENTER. All Rights Reserved.</div>
+              <div class="copyright">Copyright © 2022 NATIONAL HERITAGE CENTER. All Rights Reserved.</div> 
             </div>
           </div>
         </div>
       </div>
     </footer>
 
-    
+    <aside class="sidebar lg-hidden">
+      <nav class="sidebar-nav">
+        <h2 class="visually-hidden">메뉴</h2>
+
+        <div class="drawer-menu is-information">
+          <button class="drawer-menu-button" type="button">
+            관람정보
+          </button>
+
+          <div class="drawer-menu-content">
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item"><a href="/">관람안내</a></li>
+              <li class="drawer-menu-item"><a href="/">해설안내</a></li>
+              <li class="drawer-menu-item"><a href="/">전시관안내</a></li>
+              <li class="drawer-menu-item"><a href="/">단체관람예약</a></li>
+              <li class="drawer-menu-item"><a href="/">관람예약 확인</a></li>
+              <li class="drawer-menu-item"><a href="/">찾아오시는 길</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="drawer-menu is-exhibition">
+          <button class="drawer-menu-button" type="button">
+            전시
+          </button>
+
+          <div class="drawer-menu-content">
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item><a href="/">식물</a></li>
+              <li class="drawer-menu-item><a href="/">지질</a></li>
+              <li class="drawer-menu-item><a href="/">천연보호구역</a></li>
+              <li class="drawer-menu-item><a href="/">명승</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="drawer-menu is-education">
+          <button class="drawer-menu-button" type="button">
+            교육&middot;행사
+          </button>
+
+          <div class="drawer-menu-content">
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item><a href="/">교육프로그램</a></li>
+              <li class="drawer-menu-item><a href="/">행사소식</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="drawer-menu is-news">
+          <button class="drawer-menu-button" type="button">
+            소식&middot;참여
+          </button>
+
+          <div class="drawer-menu-content">
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item><a href="/">공지사항</a></li>
+              <li class="drawer-menu-item><a href="/">보도자료</a></li>
+              <li class="drawer-menu-item><a href="/">자주하는 질문</a></li>
+              <li class="drawer-menu-item><a href="/">전시관 소식지</a></li>
+              <li class="drawer-menu-item><a href="/">자원봉사안내</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="drawer-menu is-data">
+          <button class="drawer-menu-button" type="button">
+            자료실
+          </button>
+
+          <div class="drawer-menu-content">
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item><a href="/">영상자료실</a></li>
+              <li class="drawer-menu-item><a href="/">일반자료실</a></li>
+              <li class="drawer-menu-item><a href="/">관련사이트</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="drawer-menu is-center">
+          <button class="drawer-menu-button" type="button">
+            센터소개
+          </button>
+
+          <div class="drawer-menu-content">
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item><a href="/">인사말</a></li>
+              <li class="drawer-menu-item><a href="/">설립개요</a></li>
+              <li class="drawer-menu-item><a href="/">시설현황</a></li>
+              <li class="drawer-menu-item><a href="/">연혁</a></li>
+              <li class="drawer-menu-item><a href="/">조직안내</a></li>
+              <li class="drawer-menu-item><a href="/">정보공개</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
   <!-- flugin -->
   <script src="js/jquery-1.10.2.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- js -->
   <script src="js/visual-carousels.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/sidebar-drawer.js"></script>
   <script src="js/news-tabs.js"></script>
   <script src="js/gnb.js"></script>
   <script src="js/family-sites.js"></script>
+
   </body>
   </html>
 

@@ -1,0 +1,54 @@
+.drawer-menu {
+  &.is-open {
+    .drawer-menu-button {
+      color: $brown;
+    }
+
+    .drawer-menu-content {
+      background-color: rgb(147, 125, 99, 0.5);
+    }
+
+    &.is-information {
+      .drawer-menu-content {
+        max-height: (46px * 6)+ 16px;
+      }
+    }
+
+    &.is-exhibition {
+      .drawer-menu-content {
+        max-height: (46px * 4)+ 16px;
+      }
+    }
+
+    &.is-education {
+      .drawer-menu-content {
+        max-height: (46px * 2)+ 16px;
+      }
+    }
+
+    &.is-news {
+      .drawer-menu-content {
+        max-height: (46px * 5)+ 16px;
+        background-color: rgb(147, 125, 99, 0.5);
+      }
+    }
+
+    &.is-data {
+      .drawer-menu-content {
+        max-height: (46px * 3)+ 16px;
+      }
+    }
+
+    &.is-center {
+      .drawer-menu-content {
+        max-height: (46px * 6)+ 16px;
+      }
+    }
+  }
+
+  &-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 200ms ease-in-out;
+  }
+}

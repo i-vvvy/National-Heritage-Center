@@ -8,11 +8,11 @@ function closefamilySitesOnClickingOutside(e) {
   }
 }
 
-function togglefamilySites() {
+function toggleFamilySites() {
   if (!familySites.classList.contains('is-active')) {
     window.addEventListener('click', closefamilySitesOnClickingOutside);
   }
   familySites.classList.toggle('is-active');
 }
 
-btnFamilySites.addEventListener('click', togglefamilySites);
+btnFamilySites.addEventListener('click', toggleFamilySites);

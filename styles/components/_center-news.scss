@@ -22,6 +22,12 @@
       border: 1px solid $brown;
       padding: 4px 10px;
       border-radius: 15px;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        background-color: $brown;
+        color: $white;
+      }
     }
   }
 
@@ -67,13 +73,20 @@
 
       th {
         text-align: center;
-        padding: 0 10px;
+        padding: 0 5px;
         border-bottom: 1px solid $border;
       }
 
       td {
         width: 100%;
-        padding: 0 10px;
+        height: 56px;
+        line-height: 56px;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        padding: 0 5px;
         border-bottom: 1px solid $border;
       }
     }
@@ -90,7 +103,7 @@
 
       .tit {
         font-family: $font-main-serif;
-        font-size: 32px;
+        @include text-style(32);
         font-weight: 600;
         margin-bottom: 30px;
       }
@@ -158,8 +171,15 @@
 
         td {
           width: 100%;
+          height: 60px;
+          line-height: 60px;
           padding: 0 10px;
           border-bottom: 1px solid $border;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
         }
       }
     }
@@ -176,7 +196,7 @@
 
       .tit {
         font-family: $font-main-serif;
-        font-size: 40px;
+        @include text-style(40);
         font-weight: 600;
         margin-bottom: 40px;
       }
@@ -247,6 +267,13 @@
 
         td {
           width: 100%;
+          height: 70px;
+          line-height: 70px;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
           padding: 0 20px;
           border-bottom: 1px solid $border;
         }

@@ -40,7 +40,7 @@
 
       .num {
         font-family: $font-main-serif;
-        font-size: 38px;
+        @include text-style(38);
         font-weight: 700;
       }
 
@@ -67,7 +67,7 @@
 
       .tit {
         font-family: $font-main-serif;
-        font-size: 32px;
+        @include text-style(32);
         font-weight: 600;
         margin-bottom: 30px;
       }
@@ -98,7 +98,7 @@
         }
 
         .num {
-          font-size: 40px;
+          @include text-style(40);
           font-weight: 700;
           margin-bottom: 28px;
         }
@@ -130,7 +130,7 @@
 
       .tit {
         font-family: $font-main-serif;
-        font-size: 40px;
+        @include text-style(40);
         font-weight: 600;
         margin-bottom: 40px;
       }

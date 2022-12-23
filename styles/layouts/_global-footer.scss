@@ -92,6 +92,7 @@
     .footer-logo {
       @include text-style(16);
       margin-bottom: 10px;
+      filter: grayscale(1);
     }
 
     .tit {
