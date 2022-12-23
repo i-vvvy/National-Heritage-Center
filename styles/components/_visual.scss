@@ -19,7 +19,7 @@
   color: $white;
   position: absolute;
   width: 80%;
-  top: 26%;
+  top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -52,6 +52,8 @@
 .slider-image {
   img {
     height: auto;
+    margin-top: -200px;
+    margin-left: -1000px;
   }
 }
 
@@ -115,6 +117,8 @@
   .slider-image {
     img {
       height: auto;
+      margin-top: 0px;
+      margin-left: 0px;
     }
   }
 

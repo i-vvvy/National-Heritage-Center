@@ -1105,7 +1105,7 @@ header .gnb .gnb-close-button.is-active {
   color: #ffffff;
   position: absolute;
   width: 80%;
-  top: 26%;
+  top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -1139,6 +1139,8 @@ header .gnb .gnb-close-button.is-active {
 
 .slider-image img {
   height: auto;
+  margin-top: -200px;
+  margin-left: -1000px;
 }
 
 .slider-list .slick-dots {
@@ -1196,6 +1198,8 @@ header .gnb .gnb-close-button.is-active {
   }
   .slider-image img {
     height: auto;
+    margin-top: 0px;
+    margin-left: 0px;
   }
   .slider-list .slick-dots {
     font-family: "Noto Sans KR", sans-serif;
