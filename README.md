@@ -4,7 +4,7 @@
 
 ## **배포 주소**
 
-[https://project-national-heritage-center.netlify.app/](https://project-national-heritage-center.netlify.app/)
+[https://project-national-heritage-center.netlify.app](https://project-national-heritage-center.netlify.app)
 
 <br>
 

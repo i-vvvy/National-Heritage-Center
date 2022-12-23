@@ -639,9 +639,9 @@ header .gnb .gnb-close-button.is-active {
   }
   header .gnb-nav-item {
     position: relative;
-    width: 130px;
-    font-size: 20px;
-    line-height: 30px;
+    width: 120px;
+    font-size: 16px;
+    line-height: 24px;
     letter-spacing: -0.01em;
     color: #ffffff;
     transition: all 0.3s ease-in-out;
@@ -678,8 +678,8 @@ header .gnb .gnb-close-button.is-active {
     text-align: center;
     line-height: 3;
     color: #dddddd;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
     letter-spacing: -0.01em;
   }
   header .gnb-wrapper .gnb-nav-list > li > .inner li a:hover,

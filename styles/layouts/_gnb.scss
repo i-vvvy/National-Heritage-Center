@@ -100,8 +100,8 @@ header {
 
       &-nav-item {
         position: relative;
-        width: 130px;
-        @include text-style(20, $white);
+        width: 120px;
+        @include text-style(16, $white);
         transition: all 0.3s ease-in-out;
       }
 
@@ -141,7 +141,7 @@ header {
           text-align: center;
           line-height: 3;
           color: #dddddd;
-          @include text-style(18);
+          @include text-style(16);
         }
 
         .gnb-nav-list > li > .inner li a:hover,
