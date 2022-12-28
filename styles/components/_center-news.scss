@@ -44,6 +44,7 @@
         display: inline-block;
         padding: 15px;
         text-align: center;
+        cursor: pointer;
 
         &.current {
           background: $tertiary;
@@ -88,6 +89,7 @@
         overflow: hidden;
         padding: 0 5px;
         border-bottom: 1px solid $border;
+        cursor: pointer;
       }
     }
   }

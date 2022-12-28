@@ -169,6 +169,7 @@
       }
 
       .info-box {
+        @include text-style(16);
         margin: 10px;
       }
     }
@@ -287,6 +288,7 @@
       }
 
       .info-box {
+        @include text-style(16);
         margin: 10px;
       }
     }
@@ -295,6 +297,7 @@
       height: 200px;
       background-color: $dark;
       position: relative;
+      cursor: pointer;
 
       img {
         margin-top: 0px;
